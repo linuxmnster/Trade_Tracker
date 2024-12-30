@@ -18,7 +18,7 @@ body {
 .center-box {
     width: 55%;
     height: 55%;
-    background: url('Untitled.png') center/cover no-repeat, #021526;
+    background: url('sample.png') center/cover no-repeat, #021526;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
