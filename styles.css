@@ -1,53 +1,69 @@
-/* Updated CSS for the centered box */
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #03346E;
-    font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh;
+  background-color: #03346E;
+  font-family: Arial, sans-serif;
+}
+
+
+.header {
+  flex: 0 0 20%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .center-box {
-    width: 55%;
-    height: 55%;
-    background: url('sample.png') center/cover no-repeat, #021526;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    transition: all 1s ease;
-    box-shadow: rgb(110, 172, 218, 0.25) 0px 54px 55px, rgb(110, 172, 218, 0.12) 0px -12px 30px, rgb(110, 172, 218,0.12) 0px 4px 6px, rgb(110, 172, 218, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  flex: 0 0 55%;
+  width: 60%;
+  background-color: #021526;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  transition: all 1s ease;
+  box-shadow: rgba(89, 241, 252, 0.682) 0px 22px 70px 4px;
 }
 
 .center-box:hover {
-    width: 60%;
-    height: 60%;
-    border-radius: 30px;
-    box-shadow: rgb(226, 226, 182, 0.5) 0px 22px 70px 4px;
+  flex: 0 0 60%;
+  width: 65%;
+  box-shadow: rgba(78, 240, 255, 0.784) 0px 22px 70px 4px;
 }
 
-@media (max-width: 768px) {
-    .center-box {
-        height: 40%;
-        width: 70%;
-        background-size: 100% 100%;
-    }
-
-    .center-box:hover {
-        height: 45%;
-        width: 80%
-    }
+.navbar {
+  width: 100%;
+  flex: 0 0 20%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
 }
 
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
